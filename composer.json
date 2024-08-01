@@ -1,0 +1,33 @@
+{
+    "name": "bneumann/mock-api-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony bundle to mock external API responses",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bastian Neumann"
+        }
+    ],
+    "require": {
+        "symfony/yaml": "^7.1",
+        "symfony/config": "^7.1",
+        "symfony/http-client": "^7.1"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "^7.1",
+        "phpunit/phpunit": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bneumann\\MockApiBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bneumann\\MockApiBundle\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests/"
+    }
+}
